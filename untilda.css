@@ -334,7 +334,7 @@ body.lic .custom_bot_wraper .b_vb {background: #784f99;}.custom_bot_wraper .b_vb
 body.lic .custom_bot_wraper .b_wh {background: #5bc952;}.custom_bot_wraper .b_wh:hover {background: #449e3c;}
 body.lic .t390__descr strong {animation: 0.5s cold1 ease infinite;background: #fff;padding: 0 6px;border-radius: 50px;color: #111; font-weight: 500;box-shadow: 0 2px 15px rgba(0,0,0,0.25);font-size: 14px;line-height: 20px;display: inline-block;}
 @keyframes cold1 {0% {background-color:#fff;color:#111 !important;box-shadow: 0 2px 15px rgba(0,0,0,0.25);}49% {background-color:#fff;color:#111 !important;box-shadow: 0 2px 15px rgba(0,0,0,0.25);}50% {background-color:#ddd;color:#111 !important;box-shadow: none;}100% {background-color:#ddd;color:#111 !important;box-shadow: none;}}
-
+ 
 /*Quiz*/
 body.lic .num-child-2 .t-img-select__control {width: 50%;margin: 0;padding: 0 5px;}
 body.lic .num-child-3 .t-img-select__control {width: 33.333333%;margin: 0;padding: 0 5px;}

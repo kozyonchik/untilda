@@ -45,7 +45,7 @@ if($('.t390__btn-wrapper').length){
         //$(id).remove();/**/
     })
 }
-
+ 
 //Table Bottom --------------------------------------------------------------
 if($('.block_table_bottom').length){
     var id = $('.block_table_bottom').attr('data-id')
