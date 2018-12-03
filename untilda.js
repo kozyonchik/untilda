@@ -45,7 +45,7 @@ if($('.t390__btn-wrapper').length){
         //$(id).remove();/**/
     })
 }
- 
+  
 //Table Bottom --------------------------------------------------------------
 if($('.block_table_bottom').length){
     var id = $('.block_table_bottom').attr('data-id')
@@ -54,7 +54,7 @@ if($('.block_table_bottom').length){
 }
 
 //CODE-----------------------------------------------------------------------
-if($('script[src*="/untilda.js"').length&&$('script[src*="/untilda.js"').attr('id')){
+if($('script[src*="untilda.js"').length&&$('script[src*="untilda.js"').attr('id')){
     window.lic = 1;
     $('body').addClass('lic');
 } else {
