@@ -103,13 +103,12 @@ if(lic){
         obj.addClass('suc')
     }
     //email-type check
-    $('input[name="Email"]').on('input', function() {
-        if($(this).attr('name')=='Email'){
-            var val = $(this).val()
+    $('.t-input-group_em input').on('input', function() {
+            var val = $(this).val();
             if (val.indexOf(".ru") >= 0||val.indexOf(".net") >= 0||val.indexOf(".com") >= 0){
                 th_popup_input_changed($(this))
             }
-        }
+
     });
     //phone
     $( '.t-input-group_ph input:not(.code_add)' ).focus(function() {
