@@ -374,6 +374,8 @@ body.lic .t862__wrapper .cust_descr_holder li:before {content: "+";position: abs
 
 
 @media (min-width: 0px) and (max-width: 413px) {
+    body.lic .t862__wrapper .quiz_bonus {width: 100%;}
+    body.lic .t862__wrapper.doubleColumn .t862__capture-form {width: 100%;}
     .t-title br,.t-descr br {display: none;}
     .t740__blocktable {height: 300px !important;}
     .custom_quiz_present {right: 0px;}
