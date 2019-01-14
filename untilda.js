@@ -103,13 +103,12 @@ if(lic){
         obj.addClass('suc')
     }
     //email-type check
-    $('input[name="Email"]').on('input', function() {
-        if($(this).attr('name')=='Email'){
-            var val = $(this).val()
+    $('.t-input-group_em input').on('input', function() {
+            var val = $(this).val();
             if (val.indexOf(".ru") >= 0||val.indexOf(".net") >= 0||val.indexOf(".com") >= 0){
                 th_popup_input_changed($(this))
             }
-        }
+
     });
     //phone
     $( '.t-input-group_ph input:not(.code_add)' ).focus(function() {
@@ -267,30 +266,33 @@ function getCurrentquestion(){
         //count result
         var regExp = /\[(.*?)\]/g;
         var matches = regExp.exec(htmlComment);
-        var with_brackets = matches[0];
-        var without_brackets = matches[1];
-        var nums = without_brackets.split('-');
-        var seedCount = 0;
-        $('.t-input-group input:checked').each(function(){
-            var lengther = $(this).val().length;
-            seedCount = seedCount+lengther;
-        })
-        Math.seed = seedCount+1;
-        Math.seededRandom = function(max, min) {
-            max = max || 1;
-            min = min || 0;
-            Math.seed = (Math.seed * 9301 + 49297) % 233280;
-            var rnd = Math.seed / 233280.0;
-            return min + rnd * (max - min);
+        if(matches){
+            var with_brackets = matches[0];
+            var without_brackets = matches[1];
+            var nums = without_brackets.split('-');
+            var seedCount = 0;
+            $('.t-input-group input:checked').each(function(){
+                var lengther = $(this).val().length;
+                seedCount = seedCount+lengther;
+            })
+            Math.seed = seedCount+1;
+            Math.seededRandom = function(max, min) {
+                max = max || 1;
+                min = min || 0;
+                Math.seed = (Math.seed * 9301 + 49297) % 233280;
+                var rnd = Math.seed / 233280.0;
+                return min + rnd * (max - min);
+            }
+            var finalNum = Math.round(Math.seededRandom(Number(nums[0]),Number(nums[1])));
+            if(notchanged){
+                notchanged = 0;
+                var replaced = $('.cust_descr_holder').html().replace(/\[.*?\]/g,'<b class="changed">'+finalNum+'</b>');
+                $('.cust_descr_holder').html(replaced);
+            } else {
+                $('.cust_descr_holder b.changed').text(finalNum);
+            }
         }
-        var finalNum = Math.round(Math.seededRandom(Number(nums[0]),Number(nums[1])));
-        if(notchanged){
-            notchanged = 0;
-            var replaced = $('.cust_descr_holder').html().replace(/\[.*?\]/g,'<b class="changed">'+finalNum+'</b>');
-            $('.cust_descr_holder').html(replaced);
-        } else {
-            $('.cust_descr_holder b.changed').text(finalNum);
-        }
+
 
         
         //htmlComment.replace(/-1o9-2202/g,'The ALL new string')
