@@ -11,8 +11,30 @@ var $jscomp={scope:{},findInternal:function(a,b,c){a instanceof String&&(a=Strin
 (function($) {
     "use strict";
     $(document).ready(function(){
+//---------------------------------------------------------------------------
+//      Menu
+//---------------------------------------------------------------------------
+
+$('.t280').each(function(){
+	$(this).find('.t280__logo__img').wrap('<div class="custom_logo_wrap"></div>')
+	//$(this).find('.custom_logo_wrap').append('<div class="cusom_descr"><div class="th_out"><div class="th_in">'+$(this).find('.t280__descr')+'</div></div></div>')
+	$(this).find('.custom_logo_wrap').append($(this).find('.t280__descr'))
+	$(this).find('.t280__descr').wrap('<div class="cusom_descr"><div class="th_out"><div class="th_in">')
+})
+
+$('.t228').each(function(){
+	$(this).find('.t228__imglogo').wrap('<div class="custom_logo_wrap"></div>')
+	//$(this).find('.custom_logo_wrap').append('<div class="cusom_descr"><div class="th_out"><div class="th_in">'+$(this).find('.t280__descr')+'</div></div></div>')
+	$(this).find('.custom_logo_wrap').append($(this).find('.t228__right_descr'))
+	$(this).find('.t228__right_descr').wrap('<div class="cusom_descr"><div class="th_out"><div class="th_in">')
+})
 
 
+/*
+var widther = $('.t228__leftcontainer a').width()
+$('.t228__right_descr').css({'margin-left':widther+'px'})
+$('.t228__leftcontainer').append('<div class="th_wrp"><div class="th_out"><div class="th_in">')
+$('.t228__leftcontainer .th_in').append($('.t228__right_descr'))*/
 //---------------------------------------------------------------------------
 //      Elements Fix
 //---------------------------------------------------------------------------
@@ -54,7 +76,7 @@ if($('.block_table_bottom').length){
 }
 
 //CODE-----------------------------------------------------------------------
-if($('script[src*="/untilda.js"]').length&&$('script[src*="/untilda.js"]').attr('id')){
+if(($('script[src*="/untilda.js"]').length&&$('script[src*="/untilda.js"]').attr('id'))||($('script[src*="/untilda-s.js"]').length&&$('script[src*="/untilda-s.js"]').attr('id'))){
     window.lic = 1;
     $('body').addClass('lic');
 } else {

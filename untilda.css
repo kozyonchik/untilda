@@ -68,6 +68,21 @@ body * {word-break: break-word;}
 .t189__descr {padding-bottom: 20px;max-width: 500px;}
 .t189 .t-btn {font-size: 14px;}
 
+/*Меню*/
+.t280__logo__content img {display: inline-block;vertical-align: middle;}
+.t280__logo__content .custom_logo_wrap {position: relative;}
+.t280__logo__content .cusom_descr {    pointer-events: none;position: absolute;font-family: Montserrat, sans-serif;font-size: 12px;width: 240px;height: 100%;top: 0;left: 100%;padding-left: 15px;}
+.t280__logo__content .t280__descr {line-height: 14px;margin-top: 0;font-size: 10px;}
+.t280__logo__content .t280__descr br {display: block !important;}
+
+.t228__leftcontainer img {display: inline-block;vertical-align: middle;margin: 0;}
+.t228__leftcontainer .custom_logo_wrap {position: relative;}
+.t228__leftcontainer .cusom_descr {    pointer-events: none;position: absolute;font-family: Montserrat, sans-serif;font-size: 12px;width: 240px;height: 100%;top: 0;left: 100%;padding-left: 15px;}
+.t228__leftcontainer .t228__descr {font-size: 12px;line-height: 14px;margin-top: 0;}
+.t228__leftcontainer .t228__descr br {display: block !important;}
+.t228__right_descr {padding-left: 0;font-size: 10px;}
+
+
 
 
 .t391 .t391__btn {transition: all 0.2s;-webkit-transition: all 0.2s;opacity: 0;}
