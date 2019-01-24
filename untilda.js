@@ -6,11 +6,29 @@ var $jscomp={scope:{},findInternal:function(a,b,c){a instanceof String&&(a=Strin
 
 
 
-
-
 (function($) {
     "use strict";
     $(document).ready(function(){
+
+//---------------------------------------------------------------------------
+//      Animation
+//---------------------------------------------------------------------------
+function sbs(){
+	$('style.sbs-anim-keyframes:not(.edited)').each(function(){
+		var text = $(this).html().replace('.t-sbs-anim_started','')
+		$(this).addClass('edited')
+		//alert(text)
+		$(this).html(text);
+	})
+}
+sbs();
+setTimeout(function() {
+sbs();
+}, 500);
+setTimeout(function() {
+sbs();
+}, 1000);
+
 //---------------------------------------------------------------------------
 //      Menu
 //---------------------------------------------------------------------------
