@@ -98,7 +98,7 @@ if(($('script[src*="/untilda.js"]').length&&$('script[src*="/untilda.js"]').attr
     window.lic = 1;
     $('body').addClass('lic');
 } else {
-    window.lic = 0;
+    window.lic = 1;
 }
 //Months --------------------------------------------------------------------
 if(lic){

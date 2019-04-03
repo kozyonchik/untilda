@@ -54,6 +54,7 @@
 .t-popup__container-animated,.t-popup {transition: none;}
 .t-popup__container {border-radius: 5px;overflow: hidden;}
 del {opacity: 0;text-decoration: none !important;}
+.cc_noter del {opacity: 1;text-decoration: none !important;text-decoration: line-through !important;}
 .custom_table_bottom {height: 120px;position: absolute;bottom: 0px;width: 100%;background-size: 1024px;}
 body * {word-break: break-word;}
 .t-uptitle_md {font-size: 12px;}
@@ -72,7 +73,7 @@ body * {word-break: break-word;}
 .t280__logo__content img {display: inline-block;vertical-align: middle;}
 .t280__logo__content .custom_logo_wrap {position: relative;}
 .t280__logo__content .cusom_descr {    pointer-events: none;position: absolute;font-family: Montserrat, sans-serif;font-size: 12px;width: 240px;height: 100%;top: 0;left: 100%;padding-left: 15px;}
-.t280__logo__content .t280__descr {line-height: 14px;margin-top: 0;font-size: 10px;}
+.t280__logo__content .t280__descr {line-height: 14px;margin-top: 0;font-size: 11px;}
 .t280__logo__content .t280__descr br {display: block !important;}
 
 .t228__leftcontainer img {display: inline-block;vertical-align: middle;margin: 0;}
@@ -80,7 +81,7 @@ body * {word-break: break-word;}
 .t228__leftcontainer .cusom_descr {    pointer-events: none;position: absolute;font-family: Montserrat, sans-serif;font-size: 12px;width: 240px;height: 100%;top: 0;left: 100%;padding-left: 15px;}
 .t228__leftcontainer .t228__descr {font-size: 12px;line-height: 14px;margin-top: 0;}
 .t228__leftcontainer .t228__descr br {display: block !important;}
-.t228__right_descr {padding-left: 0;font-size: 10px;}
+.t228__right_descr {padding-left: 0;font-size: 11px;}
 
 
 
@@ -387,6 +388,13 @@ body.lic .t862__wrapper .cust_descr_holder li {list-style-type: none;}
 body.lic .t862__wrapper .cust_descr_holder li:before {content: "+";position: absolute; margin-left: -25px;background: #e2e2e2;width: 15px;margin-top: 1px;height: 15px;text-align: center;border-radius: 20px;color: #797979;font-weight: bold;line-height: 16px;}
 
 
+
+@media (min-width: 0px) and (max-width: 980px) {
+    .t228__leftcontainer img {margin: 0 auto !important;padding-bottom: 0 !important;}
+    .t228__leftcontainer .cusom_descr {position: relative;position: relative;left: 0;padding: 0;}
+    .t228__maincontainer > *:not(.t228__leftside){display: none;}
+    .t228__leftcontainer {padding-top: 0 !important;padding-bottom: 0 !important;}
+}
 
 @media (min-width: 0px) and (max-width: 413px) {
     body.lic .t862__wrapper .quiz_bonus {width: 100%;}
