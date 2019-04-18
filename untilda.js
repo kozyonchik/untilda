@@ -56,7 +56,7 @@ $('.t228__leftcontainer .th_in').append($('.t228__right_descr'))*/
 //---------------------------------------------------------------------------
 //      Elements Fix
 //---------------------------------------------------------------------------
-$(document).ready(function(){$('[data-tilda-sign]').remove();$("img").mousedown(function(){return false;});});
+$(document).ready(function(){$("img").mousedown(function(){return false;});});
 //BTN replace ---------------------------------------------------------------
 if($('.t391__btn').length){
     $('.t391 .t391__btn').each(function(){
